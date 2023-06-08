@@ -1,0 +1,21 @@
+<html>
+    <script>
+        //destructor adalah cara untuk pemindahan data array ke object atau sebaliknya.
+        const names = ["abdul", "goffar", "ronaldo", "messi", "halaand", "mbappe"];
+        const {firstname, lastname, ...others} = names;//contoh cara pembuatan destructor pada data array.
+        console.log(others);
+
+        const person = {
+            country: "indonesian",
+            hobies: {
+                hoby1: "football",
+                hoby2: "badminton",
+                hoby3: "basketball"
+            }
+        }
+        
+        const {country, hobies} = person;//contoh cara pembuatan destructor pada data object.
+        // console.log(country)
+
+    </script>
+</html>

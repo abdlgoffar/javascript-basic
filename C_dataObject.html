@@ -1,0 +1,28 @@
+<html>
+    <script>
+        //cara membuat data object javascript.
+        const person = {
+            "firstname": "abdul",
+            "age": 21,
+            //cara membuat properti dengan data function di data object.
+            address: function (a = "jl. jaksa agung suprapto") {
+                return a;
+            }
+
+        }
+       
+        person["lastname"] = "goffar"; //cara menambah data object javascript.
+        person["country"] = "indonesian";
+        
+        person["firstname"] = "abd";//cara mengupdate data object javascript.
+        delete person["age"];//cara mengahapus data object.
+        person.email = function (e = "gofar@gmail.com") {
+            return e;
+        };//cara membuat properti dengan data function di data object dari luar data obeject.
+        console.log(person.address());//cara mendapatkan data object melalui propertinya.
+        console.log(person.email());//cara mendapatkan data object melalui propertinya.
+        console.log(person.firstname);;//cara mendapatkan data object melalui propertinya.
+        console.table(person);
+
+    </script>
+</html>

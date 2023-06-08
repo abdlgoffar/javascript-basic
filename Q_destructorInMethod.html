@@ -1,0 +1,27 @@
+<html>
+    <script>
+        const person = {
+            country: "indonesian",
+            hobies: {
+                hoby1: "football",
+                hoby2: "badminton",
+                hoby3: "basketball"
+            }
+        }
+        //contoh cara pembuatan destructor method pada data object.
+        function distructurings01({country, ...hobies}) {
+            console.log(country);
+            console.log(hobies);
+        }
+        distructurings01(person);
+
+        const names = ["abdul", "goffar", "ronaldo", "messi", "halaand", "mbappe"];
+        //contoh cara pembuatan destructor method pada data array.
+        function distructurings02([firstname, lastname, ...others]) {
+            console.log(firstname);
+            console.log(lastname);
+            console.log(others);
+        }
+        distructurings02(names);
+    </script>
+</html>

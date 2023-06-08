@@ -1,0 +1,16 @@
+<html>
+    <script>
+        //this adalah keyword untuk mengakses data atau variable lokal.
+        //berikut contoh penerapan keyword this di data type object.
+        const person = {
+            address: "jl jaksa agung suprapto",
+            "firstname": "abdul",
+            "age": 21,
+            //cara membuat properti dengan data function di data object.
+            alamat : function (address) {
+                return `address lokal ${address} address global ${this.address}`;
+            }
+        }
+        console.log(person.alamat("pliyang"));
+    </script>
+</html>
